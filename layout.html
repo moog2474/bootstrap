@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container bg-light p-5">
+        <h1>Байгууллагын дотоод үйл ажиллагаанд зориулсан судалгаанд тавтай морил.</h1>
+        <form>
+            <fieldset>
+                <legend>Ерөнхий мэдээлэл</legend>
+                <div class="row gap-2 m-2">
+                    <div class="col">
+                        <div class="row">
+                            <label for="lastname" class="name">Овог</label>
+                            <input type="lastname" class="name" id="lastname" placeholder="" required class="name">
+                        </div>
+                        <div class="row">
+                            <label for="firstname" class="name">Нэр</label>
+                            <input type="firstname" class="name" id="firstname" placeholder="" required class="name">
+                        </div>
+                        <div class="row">
+                            <label for="age" class="age">Нас</label>
+                            <input type="number" class="age" id="age" placeholder="" required class="name">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <label for="region" class="region">Аймаг</label>
+                            <select name="region" id="region" class="p-1">
+                                <option value="one">Сонгох</option>
+                                <option value="two">Увс</option>
+                                <option value="three">Архангай</option>
+                                <option value="four">Сүхбаатар</option>
+                                <option value="five">Хөвсгөл</option>
+                            </select>
+                        </div>
+                        <div class="row">
+                            <label for="district" class="district">Сум</label>
+                            <select name="district" id="district" class="p-1">
+                                <option value="one">Сонгох</option>
+                                <option value="two">Улаангом</option>
+                                <option value="three">Цэцэрлэг</option>
+                                <option value="four">Чойбалсан</option>
+                                <option value="five">Улиастай</option>
+                                <option value="six">Жаргалант</option>
+                            </select>
+                        </div>
+                        <div class="row">
+                            <label for="street" class="steet">Баг</label>
+                            <select name="street" id="street" class="p-1">
+                                <option value="one">Сонгох</option>
+                                <option value="two">1-р баг</option>
+                                <option value="three">2-р баг</option>
+                                <option value="four">3-р баг</option>
+                                <option value="five">4-р баг</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-warning">Хадгалах</button>
+            </fieldset>
+        </form>
+        <hr>
+        <form action="">
+            <fieldset>
+                <legend>Хэсэг I</legend>
+                <div class="col">
+
+                    <div class="row mb-2">
+                        <div class="col">
+                            <label for="service">Үйл ажиллагаа 1</label>
+                        </div>
+                        <div class="col">
+                            <input type="text" id="service1" name="service" placeholder="">
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col">
+                            <label for="service">Үйл ажиллагаа 2</label>
+                        </div>
+                        <div class="col">
+                            <input type="text" id="service2" name="service" placeholder="">
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col">
+                            <label for="service">Үйл ажиллагаа 3</label>
+                        </div>
+                        <div class="col">
+                            <input type="text" id="service3" name="service" placeholder="машин" disabled>
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+
+                        <div class="col">
+                            <label for="service">Үйл ажиллагаа 4</label>
+                        </div>
+                        <div class="col">
+                            <input type="radio" id="yes" name="fav_language" value="HTML">
+                            <label for="html">Тийм</label><br>
+                            <input type="radio" id="no" name="fav_language" value="CSS">
+                            <label for="css">Үгүй</label><br>
+
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+
+                        <div class="col">
+                            <label for="service">Үйл ажиллагаа 5</label>
+                        </div>
+                        <div class="col">
+                            <input type="checkbox" id="newyear" name="newyear">
+                            <label for="newyear">Шинэ жил</label><br>
+                            <input type="checkbox" id="lunaryear" name="lunaryear">
+                            <label for="lunaryear">Цагаан сар</label><br>
+                            <input type="checkbox" id="naadam" name="nadaam">
+                            <label for="naadam">Наадам</label><br>
+                            <input type="checkbox" id="child" name="child">
+                            <label for="child">Хүүхдийн баяр</label><br>
+                        </div>
+                    </div>
+
+                </div>
+            </fieldset>
+            <hr>
+        </form>
+        <form action="">
+            <fieldset>
+                <legend>Хэсэг II</legend>
+                <div class="row gap-2">
+                    <div class="col">
+                        <input type="text" id="name" class="name col-12 mb-2 p-1" placeholder="name">
+                    </div>
+                    <div class="col">
+                        <input type="text" id="fname" class="fname col-12 mb-2 p-1" placeholder="firstname">
+                    </div>
+                </div>
+                <div class="row gap-2">
+                    <div class="col">
+                        <input type="text" id="gender" class="gender col-12 mb-2 p-1" placeholder="gender">
+                    </div>
+                    <div class="col">
+                        <input type="number" id="age" class="age col-12 mb-2 p-1" placeholder="age">
+                    </div>
+                </div>
+                <div class="row justify-content-between">
+                    <div class="col-7">
+                        <input type="text" id="city" class="city col-12 mb-2 p-1" placeholder="city">
+                    </div>
+                    <div class="col-2">
+                        <input type="text" id="state" class="state col-12 mb-2 p-1" placeholder="state">
+                    </div>
+                    <div class="col-2">
+                        <input type="number" id="zip" class="zip col-12 mb-2 p-1" placeholder="zip">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-success">Хадгалах</button>
+            </fieldset>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
